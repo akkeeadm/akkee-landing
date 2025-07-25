@@ -5,7 +5,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Akkee - Simplifiez la Planification d'Équipe</title>
+    <meta name="description"
+        content="Akkee est une plateforme de planification d'équipe qui facilite la gestion des horaires, des absences et des utilisateurs. Découvrez nos fonctionnalités intelligentes." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Akkee - Simplifiez la Planification d'Équipe" />
+    <meta property="og:description"
+        content="Une plateforme de planification puissante pour gérer les équipes, absences et horaires." />
+    <meta property="og:image" content="https://akkee.fr/favicon-192.png" />
+    <meta property="og:url" content="https://akkee.fr" />
+    <meta name="twitter:card" content="summary_large_image" />
+
     <link rel="stylesheet" href="style.css" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png" />
 </head>
 
 <body data-lang="fr">
@@ -60,7 +74,6 @@
                         </span>
                     </p>
                 </div>
-
 
                 <div class="feature-card animate-on-scroll">
                     <div class="feature-icon">👥</div>
@@ -159,16 +172,21 @@
             </div>
         </div>
     </section>
-
     <footer>
         <div class="container">
             <p>
-                <span class="lang-en">&copy; 2025 Akkee. All rights reserved. Simplifying team scheduling
-                    worldwide.</span>
-                <span class="lang-fr">&copy; 2025 Akkee. Tous droits réservés. Simplifier la planification d'équipe dans
-                    le monde entier.</span>
+                <span class="lang-en">&copy; <span id="year-en"></span> Akkee. All rights reserved. Simplifying team
+                    scheduling worldwide.</span>
+                <span class="lang-fr">&copy; <span id="year-fr"></span> Akkee. Tous droits réservés. Simplifier la
+                    planification d'équipe dans le monde entier.</span>
             </p>
         </div>
+
+        <script>
+            const currentYear = new Date().getFullYear();
+            document.getElementById('year-en').textContent = currentYear;
+            document.getElementById('year-fr').textContent = currentYear;
+        </script>
     </footer>
 
     <script src="script.js"></script>
