@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://akkee.fr/sitemap.xml
